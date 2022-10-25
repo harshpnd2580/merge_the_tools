@@ -1,0 +1,12 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    l1,c,s=[],0,''
+    for i in range(len(string)//k):
+       l1.append(string[c:c+k])
+       c=c+k
+    for i in l1:
+        s=''
+        for j in i:
+            if(j not in s):
+                s=s+j
+        print(s)
